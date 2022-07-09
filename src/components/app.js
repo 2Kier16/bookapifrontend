@@ -1,8 +1,7 @@
 import React, { Component } from "react";
 import axios from "axios";
 
-import Book from "./pages/book";
-import { Route, Switch } from "react-router";
+import Book from "./book";
 
 export default class App extends Component {
   constructor() {
@@ -26,14 +25,7 @@ export default class App extends Component {
 
   renderBooks() {
     return this.state.books.map((book) => {
-      return (
-        <Switch>
-          <div key={book.id}>
-            <h1>book title: {book.name}</h1>
-          </div>
-          <Route path="/book" component={Book} />
-        </Switch>
-      );
+      return <Book key={book.id} bookData={book} />;
     });
   }
 
@@ -41,7 +33,7 @@ export default class App extends Component {
     return (
       <div className="app">
         <h1>My Books</h1>
-        {this.renderBooks()}
+        <div>{this.renderBooks()}</div>
       </div>
     );
   }
