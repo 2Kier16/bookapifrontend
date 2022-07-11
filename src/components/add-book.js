@@ -28,25 +28,25 @@ export default function addBook() {
           className="add-book-form-input"
           onChange={(event) => setName(event.target.value)}
           type="text"
-          placeholder="name"
+          placeholder="Book Name"
         />
         <input
           className="add-book-form-input"
           onChange={(event) => setAuthor(event.target.value)}
           type="text"
-          placeholder="author"
+          placeholder="Author"
         />
         <input
           className="add-book-form-input"
           onChange={(event) => setPrice(event.target.value)}
           type="number"
-          placeholder="price"
+          placeholder="Price if known"
         />
         <textarea
           className="add-book-form-textarea"
           onChange={(event) => setDescription(event.target.value)}
           type="text"
-          placeholder="description"
+          placeholder="Description"
         />
         <button className="add-book-form-button">add book!</button>
       </form>

@@ -11,5 +11,14 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+
+    &-textarea {
+      border: 1px solid rgb(7, 102, 236);
+      background-color: transparent;
+      font-size: 1.5rem;
+      height: 100px;
+      outline: none;
+      padding: 10px;
+    }
   }
 }
