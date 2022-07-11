@@ -22,7 +22,7 @@
     text-decoration: none;
     font-size: 1.8rem;
     font-weight: 600;
-    color: #fbd025;
+    color: blue;
     transition: 0.3s ease-in-out;
     &:hover {
       color: #fbd025;
@@ -31,7 +31,7 @@
 }
 
 .selected {
-  color: blue;
+  color: #fbd025;
   font-size: 2rem;
   font-weight: 600;
 }
