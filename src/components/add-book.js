@@ -22,7 +22,11 @@ export default function addBook() {
 
   return (
     <div className="add-book">
-      <h1 className="add-book-title">Enter book data</h1>
+      <h1 className="add-book-title">Book Suggestion Form</h1>
+      <h3>
+        Please fill out the form below & then click on the Add Suggestion button
+        at the bottom of the form.
+      </h3>
       <form className="add-book-form" onSubmit={postBook}>
         <input
           className="add-book-form-input"
@@ -48,7 +52,7 @@ export default function addBook() {
           type="text"
           placeholder="Description"
         />
-        <button className="add-book-form-button">add book!</button>
+        <button className="add-book-form-button">Add Suggestion</button>
       </form>
     </div>
   );

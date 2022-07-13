@@ -4,7 +4,7 @@ import { NavLink } from "react-router-dom";
 export default function Navbar() {
   return (
     <div className="navbar">
-      <h1 className="navbar-title">Kier's Book collection!</h1>
+      <h1 className="navbar-title">Kier's Book Collection!</h1>
       <div className="navbar-links">
         <NavLink
           exact
