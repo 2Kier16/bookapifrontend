@@ -11,7 +11,7 @@ export default function addBook() {
   const postBook = (event) => {
     axios
       .post(
-        "http://127.0.0.1:5000/add-book",
+        "http://127.0.0.1:3000/add-book",
         {
           name: name,
           author: author,

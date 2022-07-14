@@ -4,7 +4,7 @@ import React from "react";
 export default function Book(props) {
   const deleteBook = () => {
     axios
-      .delete(`http://localhost:5000/book/${props.bookData.id}`, {
+      .delete(`http://localhost:3000/book/${props.bookData.id}`, {
         headers: { "Access-Control-Allow-Origin": "*" },
       })
       .then((response) => console.log("success", response));
