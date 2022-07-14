@@ -13,7 +13,9 @@ export default class App extends Component {
 
   componentDidMount() {
     axios
-      .get("https://kvt-bookstore-api.herokuapp.com/book/get")
+      .get("http://127.0.0.1:5000/books", {
+        headers: { "Access-Control-Allow-Origin": "*" },
+      })
       .then((response) => {
         console.log(response);
         this.setState({ books: response.data });
@@ -32,7 +34,7 @@ export default class App extends Component {
   render() {
     return (
       <div className="app">
-        <h1>My Books</h1>
+        <h1>The Library</h1>
         <div>{this.renderBooks()}</div>
       </div>
     );

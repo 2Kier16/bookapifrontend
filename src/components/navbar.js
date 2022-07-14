@@ -4,7 +4,7 @@ import { NavLink } from "react-router-dom";
 export default function Navbar() {
   return (
     <div className="navbar">
-      <h1 className="navbar-title">Kier's Book Collection!</h1>
+      <h1 className="navbar-title">Kier's Library</h1>
       <div className="navbar-links">
         <NavLink
           exact
@@ -14,12 +14,13 @@ export default function Navbar() {
         >
           Home
         </NavLink>
+
         <NavLink
           className="navbar-link"
           activeClassName="selected"
           to="/add-book"
         >
-          Add a Book!
+          Recommendations
         </NavLink>
       </div>
     </div>
